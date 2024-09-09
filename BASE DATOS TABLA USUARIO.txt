@@ -1,0 +1,37 @@
+///////base datos 
+
+create database nombrebase
+
+
+///////crear tabla usuario
+create table usuario (
+id int identity(1,1) primary key not null,
+nombre varchar(50) not null,
+apellido varchar(50) not null,
+usuario varchar(50) not null,
+contra varchar(50) not null
+)
+
+///////crear tabla usuario
+create table NewDonor (
+did int identity(1,1) primary key not null,
+dname varchar(250) not null,
+fname varchar(250) not null,
+mname varchar(250) not null,
+dob varchar(50) not null,
+mobil bigint not null,
+gender varchar(25) not null,
+email varchar(250) not null,
+bloodgroup varchar(250) not null,
+city varchar(150) not null,
+daddress varchar(550) not null,
+)
+//////
+select max(did) from [dbo].[NewDonor] 
+
+///////crear tabla usuario
+create table Stock (
+bid int identity(1,1) primary key not null,
+bloodgroup varchar(50) not null,
+quality varchar(50) not null
+)
